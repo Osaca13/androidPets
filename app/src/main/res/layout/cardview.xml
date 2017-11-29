@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardviewpets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="9dp">
+    <GridLayout
+        android:id="@+id/gridLayoutGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="1"
+        android:elevation="24dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutImagen"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/imageViewFoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/dog_96px"
+                android:elevation="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/cardview_shadow_start_color"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textViewNumero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:text="@string/nume"
+                android:gravity="center"
+                tools:textAlignment="center" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayoutContenido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="1"
+            android:columnCount="2"
+
+
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/thumbs_up_50px"
+                tools:layout_gravity="center_vertical|center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+
+
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical"
+
+                    android:text="Nombre: " />
+
+                <TextView
+                    android:id="@+id/textViewBreed"
+                    android:text="Raza: "
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+                <TextView
+                    android:id="@+id/textViewSexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Sexo: " />
+
+                <TextView
+                    android:id="@+id/textViewPeso"
+                    android:text="Peso: "
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </GridLayout>
+
+</android.support.v7.widget.CardView>

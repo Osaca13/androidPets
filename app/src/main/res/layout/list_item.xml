@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+    <GridLayout
+        android:id="@+id/gridLayoutGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:elevation="24dp">
+
+        <ImageView
+            android:layout_columnSpan="2"
+            android:id="@+id/imageViewList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dog_96px"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:text="Nombre: " />
+
+        <TextView
+            android:id="@+id/textViewBreed"
+            android:text="Raza: "
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/textViewSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:text="Sexo: " />
+
+        <TextView
+            android:id="@+id/textViewPeso"
+            android:text="Peso: "
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:textSize="20dp"
+            />
+    </GridLayout>
+
+
+</LinearLayout>
